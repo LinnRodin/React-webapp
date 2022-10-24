@@ -29,14 +29,14 @@
 /*------Top-menu-social-media-and-links------- */
    
   
-    .top-menu .menu-links a {
+    .top-menu .menu-links .a {
         color: black;
         text-decoration: none;
         margin: 0 1.2rem;
         font-weight: 500;
         
     }       
-        .top-menu .menu-links a:hover {
+        .top-menu .menu-links .a:hover {
             color: var(--color-product-outofstock-2);
             text-decoration: underline;
             font-weight: 500;

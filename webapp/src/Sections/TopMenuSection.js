@@ -12,10 +12,10 @@ const TopMenuSection = () => {
                       Fixxo.
                   </div>
                   <div className="menu-links">
-                      <NavLink to="/">Home</NavLink>
-                      <NavLink to="/categories">Categories</NavLink>
-                      <NavLink to="/products">Products</NavLink>
-                      <NavLink to="/contacts">Contacts</NavLink>
+                      <NavLink className="a" to="/">Home</NavLink>
+                      <NavLink className="a" to="/categories">Categories</NavLink>
+                      <NavLink className="a" to="/products">Products</NavLink>
+                      <NavLink className="a" to="/contacts">Contacts</NavLink>
                   </div>
                   <div>
                       <span className="social-media">

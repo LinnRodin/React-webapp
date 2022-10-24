@@ -1,6 +1,6 @@
 import React from 'react'
-import sittingfemale from '../assets/images/sittingfemale.svg';
-import sittingmale from '../assets/images/sittingmale.svg';
+import sittingfemale from '../Assets/Images/sittingfemale.svg';
+import sittingmale from '../Assets/Images/sittingmale.svg';
 
 const ShowCaseSection = () => {
   return (
