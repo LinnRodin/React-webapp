@@ -1,0 +1,79 @@
+/* ------------------Showcase pamelas reif and lets be concious----------------------*/
+
+
+/* Img-left*/
+
+.imgLeft {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url('/src/Assets/Images/pamelareif.svg');
+}
+
+    .showcase-content-2{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .imgLeft h1 {
+        position: absolute;
+        left: 58%;
+        top: 30%;
+        font-family: poppins;
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+    .imgLeft .special_button {
+        position: absolute;
+        left: 58%;
+        top: 60%;
+        width: 10rem;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+        .imgLeft .special_button:hover {
+            background-color: var(--color-white);
+            color: black;
+        }
+
+        
+/* Img-right */
+
+.imgRight {   
+    position: relative;
+    width: 633px;
+    height: 314px;
+    background-image: url('/src/Assets/Images/letsbecon.svg');
+}
+
+    .imgRight h1 {
+
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        font-family: poppins;
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        color: var(--color-white);
+    }
+
+        .imgRight .special_button {
+            position: absolute;
+            right: 65%;
+            top: 60%;
+            width: 10rem;
+            height: 3rem;
+            background-color: var(--color-white);
+            color: black;
+            transition: 0.3s ease-in-out;
+        }
+            .imgRight .special_button:hover {
+                background-color: black;
+                color: white;
+            }

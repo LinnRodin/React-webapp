@@ -1,0 +1,147 @@
+/* -------------------------------Featured-products---------------------------------*/
+
+
+.new-arrivals .grid {        
+    display: grid;
+    column-gap: 0.5;
+    grid-template-columns: repeat(8, 1fr);
+    
+}
+
+.card {
+    position: relative;
+    height: 323px;
+    width: 255px;
+    border-radius: 0;
+    border: none;
+    overflow: hidden;
+   
+}
+
+    .card .card-menu {
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        background-color: var(--color-grey-3);
+        transition: top 0.3s ease-in-out;
+    }
+
+        .card:hover .card-menu {
+            top: 1px;
+        }
+
+        .card .card-menu li {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+           
+        }
+
+            .card-menu li .btn  {
+                border-radius: 50%;
+                color: white;
+                
+            }
+
+            
+                .card-menu li .btn:hover  {
+                    background-color: black;
+                    transition: 0.2 ease-in-out;
+                
+                }
+
+            .card-menu li .btn i {
+                color: black;
+                
+            }
+
+                .card-menu li .btn i:hover  {
+                    color: white;
+                    transition: 0.2 ease-in-out;
+                }
+
+
+.card .card-general {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ 
+    .card .card-general .card-info {
+        position: relative;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        background-color: var(--color-white);
+        text-align: center;
+        margin-bottom: 0;
+    } 
+
+        .card .card-general .category {
+            margin-bottom: 0.5rem;
+            left: 38%;
+            font-family: poppins;
+            font-weight: var(--font-weight-regular);
+            color: var(--color-grey-6);
+            font-size: 13px;
+        }
+
+        .card .card-general h1 {
+            font-family: poppins;
+            font-weight: var(--font-weight-semibold);
+            font-size: 16px;
+        }
+
+        /*Header*/
+        .featured-header h1 {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            text-align: center;
+            font-family: poppins;
+            font-weight: var(--font-weight-semibold);
+            font-size: 25px;
+        }
+
+        .card .card-general .text-theme {
+            color: var(--color-theme);
+        }
+
+
+    /* Prices */
+    .card .card-general .card-price {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+        font-weight: 600;
+    }
+        .card .card-general .card-price .card-old-price {
+            text-decoration: line-through;
+        }
+        
+        /* Button QUICK VIEW */
+ 
+        .card .card-general .special_button {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            margin-top: 2.7rem;
+            transition: top 0.3s ease-in-out;
+        }
+            .card:hover .card-general .special_button {
+                top: -135px;
+                
+            }
+    
+
+   .new-arrivals .card .img {
+        height: 323px;
+        width: 255;
+        background-color: var(--color-grey-3);
+   } 

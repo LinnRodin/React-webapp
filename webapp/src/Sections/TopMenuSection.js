@@ -16,11 +16,6 @@ const TopMenuSection = () => {
                       <NavLink to="/categories">Categories</NavLink>
                       <NavLink to="/products">Products</NavLink>
                       <NavLink to="/contacts">Contacts</NavLink>
-  
-                      <a href="Home.js">Home</a>
-                      <a href="#">Categories</a>
-                      <a href="#">Products</a>
-                      <a href="Contacts.js">Contacts</a>
                   </div>
                   <div>
                       <span className="social-media">
