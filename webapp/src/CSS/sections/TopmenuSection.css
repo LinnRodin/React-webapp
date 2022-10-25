@@ -1,3 +1,4 @@
+
 /* -----------------------Top-menu------------------*/
 
 .top-menu {
@@ -21,10 +22,17 @@
     }
 
     .brand-logo{
-        font-family: 'poppins';
+        color:black;
         font-size: 35px;
         font-weight: var(--font-weight-bold);
+        text-decoration: none;
     }
+
+        .brand-logo:hover{
+            color: black;
+            text-decoration: none;
+        }
+
     
 /*------Top-menu-social-media-and-links------- */
    
@@ -37,10 +45,18 @@
         
     }       
         .top-menu .menu-links .a:hover {
-            color: var(--color-product-outofstock-2);
+            color: var(--color-theme);
             text-decoration: underline;
             font-weight: 500;
         }
+
+
+    
+            .active {
+                color: var(--color-theme);
+                text-decoration: none;
+            }
+
 
     .top-menu .container .social-media {
         width: 12.5rem;
@@ -49,7 +65,6 @@
        
     }
            
-
             .top-menu .social-media i {
                 color: black;
                 text-decoration: none;
@@ -64,13 +79,18 @@
             
                 }
 
+
             /*----Top-menu-round-buttons-*/
 
             .social-media .btn {
                 border-radius: 50%;
+                box-shadow: 0 0 4px 4px var(--color-grey-9);
                 
             }
 
                 .bg-theme {
                     background-color: var(--color-theme);
                 }
+
+
+        

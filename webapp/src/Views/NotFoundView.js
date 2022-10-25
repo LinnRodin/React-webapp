@@ -1,8 +1,18 @@
 import React from 'react'
+import FooterSection from '../Sections/FooterSection'
+import TopMenuSection from '../Sections/TopMenuSection'
 
 const NotFoundView = () => {
   return (
-    <div>404 - Page Not Found</div>
+    
+    <>
+    <TopMenuSection />
+    <h1>404 - Page Not Found</h1>
+    <FooterSection />
+    </>  
+    
+   
+    
   )
 }
 

@@ -8,14 +8,12 @@ const TopMenuSection = () => {
       <section>
           <div className="top-menu">
               <div className="container">
-                  <div className="brand-logo">
-                      Fixxo.
-                  </div>
+                  <NavLink className="brand-logo" to="/" end>Fixxo.</NavLink>
                   <div className="menu-links">
-                      <NavLink className="a" to="/">Home</NavLink>
-                      <NavLink className="a" to="/categories">Categories</NavLink>
-                      <NavLink className="a" to="/products">Products</NavLink>
-                      <NavLink className="a" to="/contacts">Contacts</NavLink>
+                      <NavLink className="a" to="/" end>Home</NavLink>
+                      <NavLink className="a" to="/categories" end>Categories</NavLink>
+                      <NavLink className="a" to="/products" end>Products</NavLink>
+                      <NavLink className="a" to="/contacts" end>Contacts</NavLink>
                   </div>
                   <div>
                       <span className="social-media">

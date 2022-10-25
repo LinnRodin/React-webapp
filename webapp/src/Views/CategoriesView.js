@@ -2,7 +2,7 @@ import React from 'react'
 import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
-const ContactsView = () => {
+const CategoriesView = () => {
   return (
     <>
     <TopMenuSection />
@@ -11,4 +11,4 @@ const ContactsView = () => {
   )
 }
 
-export default ContactsView
+export default CategoriesView
