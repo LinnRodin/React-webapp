@@ -85,6 +85,7 @@
             .social-media .btn {
                 border-radius: 50%;
                 box-shadow: 0 0 4px 4px var(--color-grey-9);
+                position: relative;   /* Badge/quantity */
                 
             }
 
@@ -92,5 +93,5 @@
                     background-color: var(--color-theme);
                 }
 
-
+               
         

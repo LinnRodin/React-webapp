@@ -1,18 +1,18 @@
 import React from 'react'
-
+import ExternalLinkIcon from '../Components/ExternalLinkIcon'
 
 const FooterSection = () => {
   return (
    
     <footer>
         <div className="_social_media">
-            <a href = "#"><i className="fa-brands fa-facebook-f"></i></a>
-            <a href = "#"><i className="fa-brands fa-instagram"></i></a>
-            <a href = "#"><i className="fa-brands fa-twitter"></i></a>
-            <a href = "#"><i className="fa-brands fa-google"></i></a>
-            <a href = "#"><i className="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div>© 2022 Fixxo. All Rights Reserved</div>
+            <ExternalLinkIcon link="https://facebook.com" icon="fa-brands fa-facebook-f" />
+            <ExternalLinkIcon link="https://instagram.com" icon="fa-brands fa-instagram" />
+            <ExternalLinkIcon link="https://twitter.com" icon="fa-brands fa-twitter" />
+            <ExternalLinkIcon link="https://google.com" icon="fa-brands fa-google" />
+            <ExternalLinkIcon link="https://linkedin.com" icon="fa-brands fa-linkedin" />    
+            </div>
+          <div>© 2022 Fixxo. All Rights Reserved</div>
     </footer>
   )
 }

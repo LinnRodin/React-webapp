@@ -19,8 +19,8 @@ const TopMenuSection = () => {
                       <span className="social-media">
                           <MenuIcon link="/search" icon="fa-sharp fa-solid fa-magnifying-glass"/>
                           <MenuIcon link="/compare" icon="fa-solid fa-code-compare fa-flip-horizontal"/>
-                          <MenuIcon link="/wishlist" icon="fa-regular fa-heart"/>
-                          <MenuIcon link="/shoppingcart" icon="fa-solid fa-bag-shopping"/>
+                          <MenuIcon quantity="3" link="/wishlist" icon="fa-regular fa-heart"/>
+                          <MenuIcon quantity="6" link="/shoppingcart" icon="fa-solid fa-bag-shopping"/>
                       </span>    
                   </div>
               </div>
