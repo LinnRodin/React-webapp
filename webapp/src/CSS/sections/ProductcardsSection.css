@@ -3,7 +3,8 @@
 
 .new-arrivals .grid {        
     display: grid;
-    column-gap: 0.5;
+    column-gap: 0.5px;
+    row-gap: 0.10px;
     grid-template-columns: repeat(8, 1fr);
     
 }
@@ -15,6 +16,7 @@
     border-radius: 0;
     border: none;
     overflow: hidden;
+    
    
 }
 
@@ -25,8 +27,10 @@
         list-style: none;
         margin: auto;
         padding: 0.5rem;
-        background-color: var(--color-grey-3);
-        transition: top 0.3s ease-in-out;
+        background-color: transparent;
+        transition: top 0.1s ease-in-out;
+        outline: none;
+        border: none;
     }
 
         .card:hover .card-menu {
@@ -42,25 +46,26 @@
             .card-menu li .btn  {
                 border-radius: 50%;
                 color: white;
+                box-shadow: 0 0 4px 4px var(--color-grey-9);
                 
             }
 
             
                 .card-menu li .btn:hover  {
                     background-color: black;
-                    transition: 0.2 ease-in-out;
+                    transition: 0.1 ease-in-out;
                 
                 }
 
-            .card-menu li .btn i {
-                color: black;
-                
-            }
+                    .card-menu li .btn i {
+                        color: black;
+                        
+                    }
 
-                .card-menu li .btn i:hover  {
-                    color: white;
-                    transition: 0.2 ease-in-out;
-                }
+                        .card-menu li .btn i:hover  {
+                            color: white;
+                            transition: 0.1 ease-in-out;
+                        }
 
 
 .card .card-general {
@@ -82,14 +87,14 @@
         .card .card-general .category {
             margin-bottom: 0.5rem;
             left: 38%;
-            font-family: poppins;
+            font-family: 'poppins';
             font-weight: var(--font-weight-regular);
             color: var(--color-grey-6);
             font-size: 13px;
         }
 
         .card .card-general h1 {
-            font-family: poppins;
+            font-family: 'poppins';
             font-weight: var(--font-weight-semibold);
             font-size: 16px;
         }
@@ -99,7 +104,7 @@
             margin-top: 5rem;
             margin-bottom: 5rem;
             text-align: center;
-            font-family: poppins;
+            font-family: 'poppins';
             font-weight: var(--font-weight-semibold);
             font-size: 25px;
         }
@@ -132,16 +137,26 @@
             right: 0;
             width: 100%;
             margin-top: 2.7rem;
-            transition: top 0.3s ease-in-out;
+            transition: top 0.1s ease-in-out;
         }
             .card:hover .card-general .special_button {
-                top: -135px;
+                top: -133px;
                 
-            }
+                
+            }   
+                .card-general .special_button:hover {
+                    background-color:black;
+                    color: white;
+                }
     
+            
+
 
    .new-arrivals .card .img {
-        height: 323px;
-        width: 255;
-        background-color: var(--color-grey-3);
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+       
    } 
+
+  
