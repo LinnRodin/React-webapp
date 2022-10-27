@@ -8,7 +8,7 @@ const HomeView = () => {
 
     <>
     <TopMenuSection />
-    <ProductCardsSection />
+    <ProductCardsSection title="Featured Products"/>
     <FooterSection />
     </>  
   
