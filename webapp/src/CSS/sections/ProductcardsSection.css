@@ -3,9 +3,9 @@
 
 .new-arrivals .grid {        
     display: grid;
-    column-gap: 0.5px;
-    row-gap: 0.10px;
-    grid-template-columns: repeat(8, 1fr);
+    column-gap: 0.2px;
+    row-gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
     
 }
 
