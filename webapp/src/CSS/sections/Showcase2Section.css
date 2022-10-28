@@ -21,7 +21,6 @@
         position: absolute;
         left: 58%;
         top: 30%;
-        font-family: poppins;
         font-weight: var(--font-weight-bold);
         font-size: 35px;
         color: var(--color-white);
@@ -57,7 +56,6 @@
         position: absolute;
         left: 10%;
         top: 30%;
-        font-family: poppins;
         font-weight: var(--font-weight-bold);
         font-size: 35px;
         color: var(--color-white);

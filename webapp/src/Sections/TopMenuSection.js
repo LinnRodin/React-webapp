@@ -3,12 +3,13 @@ import { NavLink } from 'react-router-dom'
 import MenuIcon from '../Components/MenuIcon'
 
 const TopMenuSection = () => {
+    
     return (
   
       <section>
           <div className="top-menu">
               <div className="container">
-                  <NavLink className="brand-logo" to="/" end>Fixxo.</NavLink>
+                  <NavLink id="brand-logo" to="/" end>Fixxo.</NavLink>
                   <div className="menu-links">
                       <NavLink className="a" to="/" end>Home</NavLink>
                       <NavLink className="a" to="/categories" end>Categories</NavLink>

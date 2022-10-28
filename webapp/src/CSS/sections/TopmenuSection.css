@@ -21,14 +21,14 @@
         
     }
 
-    .brand-logo{
+    #brand-logo{
         color:black;
         font-size: 35px;
         font-weight: var(--font-weight-bold);
         text-decoration: none;
     }
 
-        .brand-logo:hover{
+        #brand-logo:hover{
             color: black;
             text-decoration: none;
         }
@@ -50,9 +50,8 @@
             font-weight: 500;
         }
 
-
-    
-            .active {
+ 
+            .top-menu .menu-links .a.active {
                 color: var(--color-theme);
                 text-decoration: none;
             }

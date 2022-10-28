@@ -85,18 +85,25 @@
         margin-bottom: 0;
     } 
 
+        .card-info{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .card-info .card-category {
             margin-bottom: 5px;
-            font-family: 'poppins';
             font-weight: var(--font-weight-regular);
             color: var(--color-grey-6);
             font-size: 15px;
            
         }
 
+
         /* Header */
         .new-arrivals .header h1 {
-            font-family: 'poppins';
             font-weight: 700;
             font-size: 18px;
             margin-bottom: 30px;
@@ -107,13 +114,13 @@
         
         .card-title {
             text-align: center;
-            font-family: 'poppins';
             font-weight: 700;
             font-size: 16px;
         }
 
         .card-info .card-rating {
             color: var(--color-theme);
+            margin-bottom: 10px;
           
         }
 
@@ -149,7 +156,7 @@
                 }
     
 
-                l .card img {
+                l .lllll {
                     height: 323px;
                     width: 255px;
                 }
