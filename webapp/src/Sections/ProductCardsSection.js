@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductCard from '../Components/ProductCard'
 
 const ProductCardsSection = ({title}) => {
+    
+    const [products, setProducts] = useState([
+        {id: 1, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "Assets/alpine1.jpg"},
+        {id: 2, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "alpine1.jpg" },
+        {id: 3, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "alpine1.jpg" },
+        {id: 4, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "alpine1.jpg" },
+    ])
+
     return (
         <section className="new-arrivals">
             <div className="container">
@@ -9,14 +17,9 @@ const ProductCardsSection = ({title}) => {
                     <h1>{title}</h1>
                 </div>
                 <div className="grid">
-                  <ProductCard />
-                  <ProductCard />   
-                  <ProductCard />   
-                  <ProductCard />   
-                  <ProductCard />   
-                  <ProductCard />   
-                  <ProductCard />   
-                  <ProductCard />   
+                 {
+                    products.map(product => <ProductCard item={product} />)
+                 } 
                 </div>
             </div>                   
         </section>
@@ -25,7 +28,5 @@ const ProductCardsSection = ({title}) => {
 
 
 }
-
-
 
 export default ProductCardsSection
