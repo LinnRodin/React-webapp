@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import TempImg from '../Assets/Images/alpine1.jpg'
+
 
 const ProductCard = ({item}) => {
   return (
@@ -8,7 +8,7 @@ const ProductCard = ({item}) => {
                 <div className="container">
                     <div className="grid">
                         <div className="card">
-                              <img className="lllll" src={item.img} alt={item.name} />
+                              <img className="card-img" src={item.img} alt={item.name} />
                                 <ul className="card-menu">
                                     <li><button type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-regular fa-heart"></i></a></button></li> 
                                     <li><button type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-code-compare fa-flip-horizontal"></i></a></button></li> 
