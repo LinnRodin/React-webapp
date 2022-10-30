@@ -2,26 +2,39 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-const ProductCard = ({item}) => {
+const ProductCard = ({product}) => {
+
+  const addToWishlist = (e) => {
+    console.log ("added to wish list")
+  }
+
+  const addToCompare = (e) => {
+    console.log ("added to compare")
+  }
+
+  const addToCart = (e) => {
+    console.log ("added to shopping cart")
+  }
+
   return (
           <section className="new-arrivals">
                 <div className="container">
                     <div className="grid">
                         <div className="card">
-                              <img className="card-img" src={item.img} alt={item.name} />
+                              <img className="card-img" src={product.img} alt={product.name} />
                                 <ul className="card-menu">
-                                    <li><button type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-regular fa-heart"></i></a></button></li> 
-                                    <li><button type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-code-compare fa-flip-horizontal"></i></a></button></li> 
-                                    <li><button type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-bag-shopping"></i></a></button></li> 
+                                    <li><button onClick={addToWishlist} type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-regular fa-heart"></i></a></button></li> 
+                                    <li><button onClick={addToCompare} type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-code-compare fa-flip-horizontal"></i></a></button></li> 
+                                    <li><button onClick={addToCart} type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-bag-shopping"></i></a></button></li> 
                                 </ul>
                                 <div className="card-general">
-                                    <NavLink to="/products/"id>
+                                    <NavLink to={`/products/${product.id}`}>
                                       <button type= "button" className="btn special_button">
                                         QUICK VIEW</button>
                                     </NavLink>
                                     <div className="card-info">
-                                        <p className="card-category">{item.category}</p>
-                                        <h6 className="card-title">{item.name}</h6>
+                                        <p className="card-category">{product.category}</p>
+                                        <h6 className="card-title">{product.name}</h6>
                                         <div className="card-rating">
                                           <i className="fa-solid fa-star"></i>
                                           <i className="fa-solid fa-star"></i>
@@ -29,7 +42,7 @@ const ProductCard = ({item}) => {
                                           <i className="fa-solid fa-star"></i>
                                           <i className="fa-solid fa-star"></i>
                                         </div>
-                                      <p className="card-new-price">{item.price}</p>
+                                      <p className="card-new-price">{product.price}</p>
                                     </div>
                               </div> 
                         </div>
