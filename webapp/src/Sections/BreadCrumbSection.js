@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 const BreadCrumbSection = ({currentPage}) => {
   return (
 
-        <section class="breadcrumb">
-            <div class="container">
-                <ul class="breadcrumb-list">
+        <section className="breadcrumb">
+            <div className="container">
+                <ul className="breadcrumb-list">
                     <li>
-                        <NavLink to="/" className="me-1">Home</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </li> 
                     <li>{currentPage}</li>
                 </ul>
