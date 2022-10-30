@@ -5,15 +5,15 @@ import { NavLink } from 'react-router-dom'
 const ProductCard = ({product}) => {
 
   const addToWishlist = (e) => {
-    console.log ("added to wish list")
+    console.log(`${e} added to wish list`)
   }
 
   const addToCompare = (e) => {
-    console.log ("added to compare")
+    console.log(`${e} added to compare`)
   }
 
   const addToCart = (e) => {
-    console.log ("added to shopping cart")
+    console.log(`${e} added to shopping cart`)
   }
 
   return (

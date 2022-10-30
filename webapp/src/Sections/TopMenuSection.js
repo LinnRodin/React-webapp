@@ -13,7 +13,7 @@ const TopMenuSection = () => {
                   <div className="menu-links">
                       <NavLink className="a" to="/" end>Home</NavLink>
                       <NavLink className="a" to="/categories" end>Categories</NavLink>
-                      <NavLink className="a" to="/products" end>Products</NavLink>
+                      <NavLink className="a" to="/products">Products</NavLink>
                       <NavLink className="a" to="/contacts" end>Contacts</NavLink>
                   </div>
                   <div>

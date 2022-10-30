@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react'
+import ProductCardsSection from '../Sections/ProductCardsSection'
 import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
-import ProductCardsSection from '../Sections/ProductCardsSection'
 
 const HomeView = () => {
 

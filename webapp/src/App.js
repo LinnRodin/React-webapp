@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomeView from './Views/HomeView';
 import CategoriesView from './Views/CategoriesView';
 import ProductsView from './Views/ProductsView';
+import ProductDetailsView from './Views/ProductDetailsView';
 import ContactsView from './Views/ContactsView';
 import SearchView from './Views/SearchView';
 import CompareView from './Views/CompareView';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<HomeView /> } />
         <Route path="/categories" element={<CategoriesView /> } />
         <Route path="/products" element={<ProductsView /> } />
+        <Route path="/products/:id" element={<ProductDetailsView /> } />
         <Route path="/contacts" element={<ContactsView /> } />
         <Route path="/search" element={<SearchView /> } />
         <Route path="/compare" element={<CompareView /> } />
