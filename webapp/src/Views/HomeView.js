@@ -5,6 +5,7 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const HomeView = () => {
+  window.top.document.title = 'Fixxo.'
 
   const [featuredProducts, setFeaturedProducts] = useState([
     {id: 1, name: "Modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/2433353/pexels-photo-2433353.jpeg?auto=compress&cs=tinysrgb&w=600"},

@@ -3,6 +3,7 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const SearchView = () => {
+  window.top.document.title = 'Search | Fixxo.'
   return (
     <>
     <TopMenuSection />

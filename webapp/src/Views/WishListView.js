@@ -3,6 +3,7 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const WishListView = () => {
+  window.top.document.title = 'WishList | Fixxo.'
   return (
     <>
     <TopMenuSection />

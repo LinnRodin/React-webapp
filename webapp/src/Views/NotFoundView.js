@@ -3,6 +3,8 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const NotFoundView = () => {
+  window.top.document.title = 'NotFound | Fixxo.'
+
   return (
     
     <>

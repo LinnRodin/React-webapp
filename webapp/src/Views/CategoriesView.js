@@ -3,6 +3,7 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const CategoriesView = () => {
+  window.top.document.title = 'Categories | Fixxo.'
   return (
     <>
     <TopMenuSection />

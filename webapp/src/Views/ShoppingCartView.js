@@ -3,6 +3,7 @@ import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
 
 const ShoppingCartView = () => {
+  window.top.document.title = 'ShoppingCart | Fixxo.'
   return (
     <>
     <TopMenuSection />
