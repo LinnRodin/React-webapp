@@ -15,7 +15,6 @@
 
     .showcase-content h1 {
         font-weight: 800;
-        font-family: poppins;
         font-size: 65px;
         text-align: center;
     }
@@ -46,7 +45,7 @@
 
 
 .showcase-content .general_button .a .special_button {
-    margin-left: 7rem;
+    margin-left: 5rem;
     margin-top: 1rem;
 }
 

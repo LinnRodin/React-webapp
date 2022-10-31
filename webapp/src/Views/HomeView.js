@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import ProductCardsSection from '../Sections/ProductCardsSection'
 import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
+import ShowCaseSection from '../Sections/ShowCaseSection'
+import ShowCase2Section from '../Sections/ShowCase2Section'
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
@@ -25,8 +27,10 @@ const [topProducts, setTopProducts] = useState([
 
     <>
     <TopMenuSection />
+    <ShowCaseSection />
     <ProductCardsSection title="Featured Products" products={featuredProducts} />
     <ProductCardsSection title="Top Products" products={topProducts} />
+    <ShowCase2Section />
     <FooterSection />
     </>  
   

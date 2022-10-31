@@ -60,16 +60,16 @@ const ContactFormSection = () => {
                             <h2>Come in contact with us</h2>
                             <form onSubmit={handleSubmit} noValidate>
                                 <div>
-                                    <input id="name" onKeyUp="validate(values)" type="text" placeholder="Your Name" value={contactForm.name} onChange={handleChange} />
+                                    <input id="name" type="text" placeholder="Your Name" value={contactForm.name} onChange={handleChange} />
                                     <div id="nameErrorMessage" className="errorMessage">{formErrors.name}</div>
                                 </div>
                                 <div>
-                                    <input id="email" onKeyUp="validate(values)" type="email" placeholder="Your Mail" value={contactForm.email}  onChange={handleChange} />
+                                    <input id="email" type="email" placeholder="Your Mail" value={contactForm.email}  onChange={handleChange} />
                                     <div id="emailErrorMessage" className="errorMessage">{formErrors.email}</div>
                                 </div>
                                 
                                 <div className="textarea">
-                                    <textarea id="comment" onKeyUp="validate(values)" placeholder="Comments" value={contactForm.comment}  onChange={handleChange}></textarea>
+                                    <textarea id="comment" placeholder="Comments" value={contactForm.comment}  onChange={handleChange}></textarea>
                                     <div id="commentErrorMessage" className="errorMessage">{formErrors.comment}</div>
                                 </div>
                         
@@ -94,3 +94,4 @@ const ContactFormSection = () => {
 
 }    
 export default ContactFormSection
+
