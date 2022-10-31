@@ -25,7 +25,7 @@
 .contact-form form textarea{
     width: 100%;
     padding: 18px 20px;
-    border: 1px solid #70707066;;
+    border: 1px solid #70707066;
     height: 140px;
     resize: none;
 }
@@ -54,6 +54,7 @@
             margin-bottom: 30px;
         }
 
+        /*---Button-contactform---*/
         .btn-theme {
            position: relative;
            background-color: var(--color-theme);

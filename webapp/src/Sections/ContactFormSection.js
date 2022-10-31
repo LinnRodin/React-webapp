@@ -49,27 +49,35 @@ const ContactFormSection = () => {
        
         <section className="contact-form">
             <div className="container">
+
                 {
-                   Submitted ?
-                    (<div className="d-flex justify-content-center align-items-center">
-                        <div>Thank You For Your Comment!</div>
-                    </div>)
-                   :
-                   (    
-                        <>
+                   Submitted ? (
+                    <div className="alert alert-success text-center" role="alert">
+                        <h3>Thank you for your comments!</h3>
+                        <p>We will contact you as soon as possible!</p>
+                        </div>) : (<></>)
+                }        
+                        
+                {
+                   Submitted ? (
+                    <div className="alert alert-danger text-center" role="alert">
+                        <h3>Something went wrong!</h3>
+                        <p>We couldn't submitt your comments!</p>
+                        </div>) : (<></>)
+                }    
                             <h2>Come in contact with us</h2>
                             <form onSubmit={handleSubmit} noValidate>
                                 <div>
-                                    <input id="name" type="text" placeholder="Your Name" value={contactForm.name} onChange={handleChange} />
+                                    <input id="name" value={contactForm.name} onChange={handleChange} type="text" placeholder="Your Name"/>
                                     <div id="nameErrorMessage" className="errorMessage">{formErrors.name}</div>
                                 </div>
                                 <div>
-                                    <input id="email" type="email" placeholder="Your Mail" value={contactForm.email}  onChange={handleChange} />
+                                    <input id="email" value={contactForm.email}  onChange={handleChange}  type="email" placeholder="Your Mail" />
                                     <div id="emailErrorMessage" className="errorMessage">{formErrors.email}</div>
                                 </div>
                                 
                                 <div className="textarea">
-                                    <textarea id="comment" placeholder="Comments" value={contactForm.comment}  onChange={handleChange}></textarea>
+                                    <textarea id="comment" value={contactForm.comment}  onChange={handleChange} placeholder="Comments"></textarea>
                                     <div id="commentErrorMessage" className="errorMessage">{formErrors.comment}</div>
                                 </div>
                         
@@ -82,16 +90,11 @@ const ContactFormSection = () => {
                                 </div>
                             </form>
 
-                        </>  
-                    )
-                }    
-                
 
             </div>     
         </section>        
     )
 
-
-}    
+}
 export default ContactFormSection
 
