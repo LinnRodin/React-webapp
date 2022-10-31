@@ -1,48 +1,48 @@
 import React, { useState } from 'react'
+import { validate } from '../Assets/scripts/ContactFormValidation'
 
 const ContactFormSection = () => {
-    
-    const [contactForm, setContactForm] = useState({name: '', email: '', comment: ''})
-    const [formErrors, setFormErrors] = useState({})
-    const [Submitted, SetSubmitted] = useState(false)
+  let currentPage = "Contact Us"
+  window.top.document.title = `${currentPage} || Fixxo` 
 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [comments, setComments] = useState('')
+  const [errors, setErrors] = useState({})
+  const [submitted, setSubmitted] = useState(false)
 
-    const validate = (values) => {
-        const errors = {}
-        const regex_email = (/^(([^<>()[]\.,;:\s@"]+(.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/)
+  const handleChange = (e) => {
+    const {id, value} = e.target
 
-        if (!values.name)
-        errors.name = "You must enter a name"
-
-        if (!values.email)
-        errors.email = "You must enter an e-mail adress"
-        else if(!regex_email.test(values.email))
-        errors.email = "You must enter a valid e-mail adress (eg. name@domain.com)"
-
-        if (!values.comment)
-        errors.comment = "You must enter a comment"
-        else if(!values.comment.length < 5 )
-        errors.comment = "Your comment must longer then five characters"
-        
-        if (Object.keys(errors).length === 0)
-            SetSubmitted(true)
-        else 
-            SetSubmitted(false)    
-
-        return errors;
+    switch(id) {
+      case 'name':
+        setName(value)
+        break
+      case 'email':
+        setEmail(value)
+        break
+      case 'comments':
+        setComments(value)
+        break
     }
 
-    
-    const handleChange = (e) => {
-        const {id, value} = e.target
-        setContactForm({...contactForm, [id]: value})
-    }
+    setErrors({...errors, [id]: validate(e)})
+  }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setFormErrors(validate(contactForm))
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setErrors(validate(e, {name, email, comments}))
+  
+    if (errors.name === null && errors.email === null && errors.comments === null) {
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+      setComments('')
+      setErrors({})
+    } else {
+      setSubmitted(false)
     }
-
+  }
 
 
     return (  
@@ -51,7 +51,7 @@ const ContactFormSection = () => {
             <div className="container">
 
                 {
-                   Submitted ? (
+                   submitted ? (
                     <div className="alert alert-success text-center" role="alert">
                         <h3>Thank you for your comments!</h3>
                         <p>We will contact you as soon as possible!</p>
@@ -59,7 +59,7 @@ const ContactFormSection = () => {
                 }        
                         
                 {
-                   Submitted ? (
+                   submitted ? (
                     <div className="alert alert-danger text-center" role="alert">
                         <h3>Something went wrong!</h3>
                         <p>We couldn't submitt your comments!</p>
@@ -68,19 +68,17 @@ const ContactFormSection = () => {
                             <h2>Come in contact with us</h2>
                             <form onSubmit={handleSubmit} noValidate>
                                 <div>
-                                    <input id="name" value={contactForm.name} onChange={handleChange} type="text" placeholder="Your Name"/>
-                                    <div id="nameErrorMessage" className="errorMessage">{formErrors.name}</div>
+                                    <input id="name" className={(errors.name ? 'error': '')} value={name} onChange={handleChange} type="text" placeholder="Your Name" />
+                                    <div className="errorMessage">{errors.name}</div>
                                 </div>
                                 <div>
-                                    <input id="email" value={contactForm.email}  onChange={handleChange}  type="email" placeholder="Your Mail" />
-                                    <div id="emailErrorMessage" className="errorMessage">{formErrors.email}</div>
+                                    <input id="email" className={(errors.email ? 'error': '')} value={email} onChange={handleChange} type="email" placeholder="Your Mail" />
+                                    <div className="errorMessage">{errors.email}</div>
                                 </div>
-                                
                                 <div className="textarea">
-                                    <textarea id="comment" value={contactForm.comment}  onChange={handleChange} placeholder="Comments"></textarea>
-                                    <div id="commentErrorMessage" className="errorMessage">{formErrors.comment}</div>
+                                    <textarea id="comments" className={(errors.comments ? 'error': '')} style={(errors.comments ? {border: '1px solid #FF7373'}: {} )} value={comments} onChange={handleChange} placeholder="Comments"></textarea>
+                                    <div className="errorMessage">{errors.comments}</div>
                                 </div>
-                        
                                 <div>
                                     <button type="submit" className="btn-theme">
                                         <span className="corner-topLeft"></span>
