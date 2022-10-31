@@ -33,16 +33,30 @@ const ContactFormSection = () => {
     e.preventDefault()
     setErrors(validate(e, {name, email, comments}))
   
+ 
     if (errors.name === null && errors.email === null && errors.comments === null) {
-      setSubmitted(true)
-      setName('')
-      setEmail('')
-      setComments('')
-      setErrors({})
+     
+        let json = JSON.stringify({ name, email, comments })
+      
+     
+         fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
+         method: 'POST',
+           headers: {
+               'Content-Type': 'application/json'
+            },
+            body: json       
+        })
+        .then(res => console.log(res))
+
+     // setSubmitted(true)
+     // setName('')
+     // setEmail('')
+     // setComments('')
+     // setErrors({})
     } else {
-      setSubmitted(false)
-    }
-  }
+     //  setSubmitted(false)
+   }
+}
 
 
     return (  
