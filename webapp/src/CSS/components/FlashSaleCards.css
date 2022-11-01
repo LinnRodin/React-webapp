@@ -1,0 +1,49 @@
+/* -------------------------Flash sale left side--------------------------- */
+
+    
+.flash-sale-left{
+    margin-top: 5rem;
+}
+    
+.flash-sale-left .grid {        
+    display: grid;
+    column-gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+    /* placeholder-box */
+.flash-sale-left .img_left_box {
+    background-color: var(--color-grey-1);
+    height: 600px;
+    width: 600px;
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+}
+    /* Flex-pos. */
+    .flash-sale-left .img_left_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+    }
+
+        .flash-sale-left .img_left_box h1 {
+           
+           font-weight: 600;
+           font-size: 55px;
+           color: var(--color-white-1);
+        }
+
+        .img_left_box .img_left_button .btn {
+            background-color: black;
+            color: white;
+    
+        }
+
+.flash-sale-left .card .img {
+    height: 323px;
+    width: 255px;
+    background-color: var(--color-grey-3);
+} 

@@ -23,6 +23,7 @@
         font-size: 17px;
         margin-top: 40px;
         margin-bottom: 40px;
+        text-align: center;
         
     }
 
@@ -44,13 +45,14 @@
 /*--------Button-showcase------*/
 
 
-.showcase-content .general_button .a .special_button {
-    margin-left: 5rem;
+.showcase-content .general_button .special_button {
+    margin-left: 7rem;
     margin-top: 1rem;
 }
 
-    .showcase-content .general_button .a .special_button:hover{
-        color: black;
+    .showcase-content .general_button .special_button:hover{
+        background-color: black;
+        color: white;
         transition: 0.3 ease-in-out;
     }
 
