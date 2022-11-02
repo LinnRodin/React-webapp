@@ -6,6 +6,7 @@ import TopMenuSection from '../Sections/TopMenuSection'
 import ShowCaseSection from '../Sections/ShowCaseSection'
 import ShowCase2Section from '../Sections/ShowCase2Section'
 
+
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
 

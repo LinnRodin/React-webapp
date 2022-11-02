@@ -47,11 +47,8 @@ const ContactFormSection = () => {
             setEmail('')
             setComments('')
             setErrors({})
-
-            let result = await submitData('https://win22-webapi.azurewebsites.net/api/contactform','POST', json)    
-            console.log('await result: ' + result)
-            
-            if(true) {
+                        
+            if(await submitData('https://win22-webapi.azurewebsites.net/api/contactform','POST', json)) {
                 setSubmitted(true)
                 setFailedSubmit(false)
             } else {
