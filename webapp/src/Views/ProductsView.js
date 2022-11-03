@@ -1,13 +1,17 @@
 import React from 'react'
-import FooterSection from '../Sections/FooterSection'
 import TopMenuSection from '../Sections/TopMenuSection'
+import BreadCrumbSection from '../Sections/BreadCrumbSection'
+import ProductCardsSection from '../Sections/ProductCardsSection'
+import FooterSection from '../Sections/FooterSection'
 
 const ProductsView = () => {
   window.top.document.title = 'Products | Fixxo.'
   return (
     <>
-    <TopMenuSection />
-    <FooterSection />
+      <TopMenuSection />
+      <BreadCrumbSection currentPage="Products"/>
+      <ProductCardsSection title="Products" />
+      <FooterSection />
     </>  
   )
 }
