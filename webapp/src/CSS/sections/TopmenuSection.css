@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 0 auto;
+ 
    
 }
 
@@ -17,7 +18,7 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
-        
+       
         
     }
 
@@ -42,6 +43,7 @@
         text-decoration: none;
         margin: 0 1.2rem;
         font-weight: 500;
+      
         
     }       
         .top-menu .menu-links .a:hover {

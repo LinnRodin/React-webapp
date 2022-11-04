@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
         let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-        setProducts(result.json());
+        setProducts(await result.json());
     }
     fetchData();
     

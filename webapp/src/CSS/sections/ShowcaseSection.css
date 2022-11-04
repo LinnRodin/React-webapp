@@ -4,6 +4,7 @@
 .showcase{
     width: 100%;
     background-color: var(--color-grey-2);
+    
 }
 
 
@@ -29,8 +30,8 @@
 
 
     .showcase-content img {
-        width: 570px;
-        height: 570px;
+        width: 510px;
+        height: 550px;
     }
 
     ._img-left {
@@ -46,7 +47,7 @@
 
 
 .showcase-content .general_button .special_button {
-    margin-left: 7rem;
+    margin-left: 11rem;
     margin-top: 1rem;
 }
 
