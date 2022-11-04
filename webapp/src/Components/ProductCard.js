@@ -21,7 +21,7 @@ const ProductCard = ({product}) => {
                 <div className="container">
                     <div className="grid">
                         <div className="card">
-                              <img className="card-img" src={product.img} alt={product.name} />
+                              <img className="card-img" src={product.imageName} alt={product.name} />
                                 <ul className="card-menu">
                                     <li><button onClick={addToWishlist} type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-regular fa-heart"></i></a></button></li> 
                                     <li><button onClick={addToCompare} type="button" className="btn btn-light btn-circle btn-sm"><a href = "#"><i className="fa-solid fa-code-compare fa-flip-horizontal"></i></a></button></li> 
