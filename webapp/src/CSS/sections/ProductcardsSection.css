@@ -3,7 +3,7 @@
 
 .new-arrivals .grid {        
     display: grid;
-    column-gap: 0.2px;
+    column-gap: 0.2rem;
     row-gap: 60px;
     grid-template-columns: repeat(4, 1fr);
     

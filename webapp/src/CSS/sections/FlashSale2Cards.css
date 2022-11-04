@@ -1,0 +1,49 @@
+
+.flash-sale-right{
+    margin-top: 5rem;
+    border-bottom: var(--color-grey-7) solid 2px;
+    
+}
+    
+.flash-sale-right .grid {        
+    display: grid;
+    column-gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+    /* Box */
+.flash-sale-right .img_right_box {
+    background-color: var(--color-grey-1);
+    height: 600px;
+    width: 600px;
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+}
+    /* Flex-pos. */
+    .flash-sale-right .img_right_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+    }
+
+        .flash-sale-right .img_right_box h1 {
+           font-weight: 600;
+           font-size: 55px;
+           color: var(--color-white-1);
+        }
+
+        .img_right_box .img_right_button .btn {
+            background-color: black;
+            color: white;
+    
+        }
+
+.flash-sale-right .card .img {
+    height: 323px;
+    width: 255px;
+   
+} 
+

@@ -1,7 +1,8 @@
 import React from 'react'
+import ProductCard from '../Components/ProductCard'
 
 
-const FlashSaleCards = () => {
+const FlashSaleCards = ({ products = []}) => {
   return (
         <section className="flash-sale-left">
                 <div className="container">
@@ -12,6 +13,9 @@ const FlashSaleCards = () => {
                         <div className="img_left_button">
                             <a href = "#"><button type= "button" className="btn special_button">FLASH SALE</button></a>
                         </div>
+                        {
+                          products.map( product => <ProductCard key={product.articleNumber} product={product} />)
+                        } 
                     </div>
                 </div>  
         </section>      

@@ -5,6 +5,9 @@ import ProductCardsSection from '../Sections/ProductCardsSection'
 import ShowCase2Section from '../Sections/ShowCase2Section'
 import FooterSection from '../Sections/FooterSection'
 import {ProductContext} from '../Contexts/contexts'
+import FlashSaleCards from '../Sections/FlashSaleCards'
+import FlashSale2Cards from '../Sections/FlashSale2Cards'
+import InfoBoxesSection from '../Sections/InfoBoxesSection'
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
@@ -17,6 +20,9 @@ const HomeView = () => {
       <ShowCaseSection />
       <ProductCardsSection title="Featured Products" products={productContext.featuredProducts} />
       <ShowCase2Section />
+      <FlashSaleCards products={productContext.flashProducts} />
+      <FlashSale2Cards products={productContext.saleProducts} />
+      <InfoBoxesSection />
       <FooterSection />
     </>  
   

@@ -17,7 +17,10 @@ function App() {
 
   const [products, setProducts] = useState({
     allProducts: [],
-    featuredProducts: []
+    featuredProducts: [],
+    flashProducts: [],
+    saleProducts: []
+
 
   })
  
@@ -33,6 +36,20 @@ function App() {
       setProducts({...products, featuredProducts: await result.json()})
     }
     fetchFeaturedProducts();
+
+    const fetchFlashProducts = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      setProducts({...products, flashProducts: await result.json()})
+    }
+    fetchFlashProducts();
+
+    const fetchSaleProducts = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      setProducts({...products, saleProducts: await result.json()})
+    }
+    fetchSaleProducts();
+
+
     
   }, []);
 
