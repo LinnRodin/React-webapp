@@ -7,7 +7,7 @@ const ShowCaseSection = () => {
             <div className="container">
                 <div className="showcase-content">  
                     <div><img src={'https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png'} className="_img-left" alt="female"/></div>
-                        <div><h1><strong>SALE UP To 50% off</strong></h1>
+                        <div><h1><strong>Sale Up To 50% off</strong></h1>
                             <p>Online shopping free home delivery over $100</p>
                             <div className="general_button">
                             <a href = "#"><button type= "button" className="btn special_button">SHOP NOW</button></a>

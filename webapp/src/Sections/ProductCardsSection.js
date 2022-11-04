@@ -1,11 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ProductCard from '../Components/ProductCard'
-import {ProductContext} from '../Contexts/contexts'
 
-const ProductCardsSection = ({title}) => {
+
+const ProductCardsSection = ({title, products = []}) => {
     
-   const products = useContext(ProductContext)
-
+  
     return (
         <section className="new-arrivals">
             <div className="container">
