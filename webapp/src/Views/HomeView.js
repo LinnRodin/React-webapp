@@ -22,7 +22,6 @@ const HomeView = () => {
       <ShowCase2Section />
       <FlashSaleCards products={productContext.flashProducts} />
       <FlashSale2Cards products={productContext.saleProducts} />
-      <InfoBoxesSection />
       <FooterSection />
     </>  
   

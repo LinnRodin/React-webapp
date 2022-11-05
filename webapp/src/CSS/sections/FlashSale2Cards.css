@@ -1,15 +1,13 @@
-
 .flash-sale-right{
     margin-top: 5rem;
     border-bottom: var(--color-grey-7) solid 2px;
-    
+    display: flex;
+    flex-direction: row-reverse;
 }
-    
-.flash-sale-right .grid {        
+
+.product_cards{
     display: grid;
-    column-gap: 0.8rem;
-    grid-template-columns: repeat(4, 1fr);
-   
+    grid-template-columns: repeat(2, 1fr); 
 }
 
     /* Box */
@@ -17,8 +15,6 @@
     background-color: var(--color-grey-1);
     height: 600px;
     width: 600px;
-    grid-column: auto/span 2;
-    grid-row: auto/span 2;
 }
     /* Flex-pos. */
     .flash-sale-right .img_right_box {
@@ -46,4 +42,3 @@
     width: 255px;
    
 } 
-
