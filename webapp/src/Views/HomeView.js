@@ -16,7 +16,9 @@ const HomeView = () => {
 
   return (
     <>
-      <TopMenuSection />
+      <header style={{backgroundColor : "#F5F5F5" }} >
+        <TopMenuSection />
+      </header>
       <ShowCaseSection />
       <ProductCardsSection title="Featured Products" products={productContext.featuredProducts} />
       <ShowCase2Section />

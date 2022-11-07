@@ -2,7 +2,6 @@
 /* -----------------------Top-menu------------------*/
 
 .top-menu {
-    background-color: var(--color-grey-2);
     height: 80px;
     display: flex;
     align-items: center;
