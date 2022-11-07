@@ -62,7 +62,7 @@
         color: var(--color-white);
     }
 
-        .imgRight .special_button {
+        .imgRight .special_button_white {
             position: absolute;
             right: 65%;
             top: 60%;
@@ -73,7 +73,7 @@
             font-weight: bold;
             transition: 0.3s ease-in-out;
         }
-            .imgRight .special_button:hover {
+            .imgRight .special_button_white:hover {
                 background-color: black;
                 color: white;
             }

@@ -63,6 +63,8 @@
   align-items: center;
 }
 
+/* Button with white borders*/
+
 .special_button{
   position: relative;
   background-color: var(--color-product-outofstock-2);
@@ -95,3 +97,36 @@
   border-bottom: 2px solid white;
 }
 
+/* White button with black borders */
+
+.special_button_white{
+  position: relative;
+  background-color: var(--color-product-outofstock-2);
+  height: 50px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 0;
+  border: none;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+.special_button_white::before,
+.special_button_white::after{
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+}
+
+.special_button_white::before{
+  left: 0.3rem;
+  top: 0.3rem;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+.special_button_white::after{
+  right: 0.3rem;
+  bottom: 0.3rem;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}

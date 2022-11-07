@@ -15,7 +15,7 @@ const ShowCase2Section = () => {
                 <div className="imgRight">
                 <h1>Lets Be<br/>Concious</h1>
                     <div className="general_button">
-                        <a href = "#"><button type= "button" className="btn special_button">FLASH SALE</button></a>
+                        <a href = "#"><button type= "button" className="btn special_button_white">FLASH SALE</button></a>
                     </div>        
                 </div> 
             </div>

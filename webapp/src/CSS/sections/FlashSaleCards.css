@@ -37,13 +37,13 @@
            color: var(--color-white-1);
         }
 
-        .img_left_box .img_left_button .btn {
+        .img_left_box .img_left_button .special_button_white {
             background-color: white;
             color: black; 
             font-weight: bold;
     
         }
-            .img_left_box .img_left_button .btn:hover {
+            .img_left_box .img_left_button .special_button_white:hover {
                 background-color: black;
                 color: white;
         
