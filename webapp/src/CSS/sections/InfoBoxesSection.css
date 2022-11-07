@@ -8,9 +8,10 @@
 
     .bottom-menu .info-menu .btn{
         border-radius: 50%;
-        background-color: var(--color-grey-4);
+        background-color: white;
         height: 50px;
         width: 50px;
+        box-shadow: 0 0 4px 4px var(--color-grey-9);
     }
 
     .social-media-bottom {

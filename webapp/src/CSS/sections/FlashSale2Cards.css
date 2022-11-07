@@ -32,13 +32,20 @@
         }
 
         .img_right_box .img_right_button .btn {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
     
         }
+
+            .img_right_box .img_right_button .btn:hover {
+                background-color: black;
+                color: white;
+        
+            }
 
 .flash-sale-right .card .img {
     height: 323px;
     width: 255px;
    
 } 
+
