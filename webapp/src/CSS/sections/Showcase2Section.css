@@ -34,6 +34,7 @@
         height: 3rem;
         background-color: black;
         color: white;
+        font-weight: bold;
         transition: 0.3s ease-in-out;
     }
         .imgLeft .special_button:hover {
@@ -69,6 +70,7 @@
             height: 3rem;
             background-color: var(--color-white);
             color: black;
+            font-weight: bold;
             transition: 0.3s ease-in-out;
         }
             .imgRight .special_button:hover {

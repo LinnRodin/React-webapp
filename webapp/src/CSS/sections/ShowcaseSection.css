@@ -47,8 +47,9 @@
 
 
 .showcase-content .general_button .special_button {
-    margin-left: 11rem;
+    margin-left: 7rem;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
     .showcase-content .general_button .special_button:hover{

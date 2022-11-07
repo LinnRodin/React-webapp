@@ -37,6 +37,7 @@
         .img_left_box .img_left_button .btn {
             background-color: white;
             color: black; 
+            font-weight: bold;
     
         }
             .img_left_box .img_left_button .btn:hover {
@@ -50,3 +51,4 @@
     width: 255px;
    
 } 
+
