@@ -5,12 +5,15 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
+   
 }
 
-
-.product_cards{
+.product_component_left{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    flex: 1;
+    margin-right: 100px;
+  
 }
 
  /* placeholder-box  */

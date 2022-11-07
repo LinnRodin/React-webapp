@@ -161,4 +161,8 @@
                     width: 100%;
                     object-fit: cover;
                 }
+
+                .card-new-price {
+                    font-weight: bold;
+                }
   

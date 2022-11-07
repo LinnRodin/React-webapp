@@ -2,14 +2,17 @@
 
 .flash-sale-right{
     margin-top: 5rem;
-    border-bottom: var(--color-grey-7) solid 2px;
     display: flex;
     flex-direction: row-reverse;
+    border-bottom: var(--color-grey-7) solid 2px;
 }
 
-.product_cards{
+.product_component_right{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    flex: 1;
+    margin-left: 100px;
+   
 }
 
     /* Box */
