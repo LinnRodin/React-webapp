@@ -12,12 +12,12 @@ const FlashSaleCards = ({ products = []}) => {
                         <a href = "#"><button type= "button" className="btn special_button_white">FLASH SALE</button></a>
                     </div>
                 </div> 
-            </div>
-            <div className="product_component_left">
-                {
-                    products.map( product => <ProductCard key={product.articleNumber} product={product} />)
-                } 
-            </div>    
+                <div className="product_component_left">
+                    {
+                        products.map( product => <ProductCard key={product.articleNumber} product={product} />)
+                    } 
+                </div> 
+            </div>   
         </section>      
     )
 }
