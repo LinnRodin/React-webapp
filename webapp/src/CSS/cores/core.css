@@ -97,11 +97,12 @@
   border-bottom: 2px solid white;
 }
 
+
 /* White button with black borders */
 
 .special_button_white{
   position: relative;
-  background-color: var(--color-product-outofstock-2);
+  background-color: white;
   height: 50px;
   line-height: 30px;
   font-size: 15px;
@@ -130,3 +131,6 @@
   border-right: 2px solid black;
   border-bottom: 2px solid black;
 }
+
+  
+
