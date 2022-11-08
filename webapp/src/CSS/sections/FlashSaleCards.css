@@ -2,10 +2,12 @@
 
  
 .flash-sale-left{
-    margin-top: 5rem;
+    margin-top: 5rem;  
+}
+
+.flash-sale-left .container{
     display: flex;
-    flex-direction: row;
-   
+    flex-direction: row
 }
 
 .product_component_left{

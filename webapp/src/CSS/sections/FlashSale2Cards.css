@@ -2,17 +2,18 @@
 
 .flash-sale-right{
     margin-top: 5rem;
+    border-bottom: var(--color-grey-7) solid 2px;
+}
+
+.flash-sale-right .container{
     display: flex;
     flex-direction: row-reverse;
-    border-bottom: var(--color-grey-7) solid 2px;
 }
 
 .product_component_right{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     flex: 1;
-    margin-left: 100px;
-   
 }
 
     /* Box */
@@ -46,6 +47,7 @@
             .img_right_box .img_right_button .special_button_white:hover {
                 background-color: black;
                 color: white;
+                
         
             }
 
