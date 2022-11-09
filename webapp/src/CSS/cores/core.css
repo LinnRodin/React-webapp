@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap%27');
 
-/*----------------------------------------Base/Core----------------------------------------- */
+/*----------------------------------------Base----------------------------------------- */
 :root {
     --color-theme: #FF7373;
     --color-theme-light: #EDfCFA;
@@ -46,7 +46,7 @@
     --border-radius-rounded: 50%;
   }
   
-  /*--------------------------------------General--------------------------------------- */
+  /*--------------------------------------General-setup-------------------------------------- */
   html, body {
     font-size: 16px;
     line-height: 1.5;
@@ -55,7 +55,7 @@
   }
   
 
-/* ----------------------------------General-button-------------------------------- */
+/* ---------------------------------------General-buttons-------------------------------- */
 
 .flex-column {
   display: flex;
@@ -63,7 +63,60 @@
   align-items: center;
 }
 
-/* Button with white borders*/
+
+/* Black button with white borders and white hover*/
+
+.special_button_dark{
+  position: relative;
+  background-color: black;
+  height: 50px;
+  line-height: 30px;
+  font-size: 15px;
+  border-radius: 0;
+  border: none;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+.special_button_dark::before,
+.special_button_dark::after{
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+}
+
+.special_button_dark::before{
+  left: 0.3rem;
+  top: 0.3rem;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+    .special_button_dark:hover::before{
+      left: 0.3rem;
+      top: 0.3rem;
+      border-left: 2px solid black;
+      border-top: 2px solid black;
+    }
+
+.special_button_dark::after{
+  right: 0.3rem;
+  bottom: 0.3rem;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+
+    .special_button_dark:hover::after{
+      right: 0.3rem;
+      bottom: 0.3rem;
+      border-right: 2px solid  black;
+      border-bottom: 2px solid  black;
+    }
+
+
+
+/* Pink buttons with white borders and white hover*/
 
 .special_button{
   position: relative;
@@ -90,6 +143,14 @@
   border-left: 2px solid white;
   border-top: 2px solid white;
 }
+
+    .special_button:hover::before{
+      left: 0.3rem;
+      top: 0.3rem;
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+    }
+
 .special_button::after{
   right: 0.3rem;
   bottom: 0.3rem;
@@ -98,7 +159,15 @@
 }
 
 
-/* White button with black borders */
+    .special_button:hover::after{
+      right: 0.3rem;
+      bottom: 0.3rem;
+      border-right: 2px solid  white;
+      border-bottom: 2px solid  white;
+    }
+
+
+/* White button with black borders and white hover */
 
 .special_button_white{
   position: relative;
@@ -125,6 +194,14 @@
   border-left: 2px solid black;
   border-top: 2px solid black;
 }
+
+  .special_button_white:hover::before{
+    left: 0.3rem;
+    top: 0.3rem;
+    border-left: 2px solid  white;
+    border-top: 2px solid  white;
+  }
+
 .special_button_white::after{
   right: 0.3rem;
   bottom: 0.3rem;
@@ -132,5 +209,11 @@
   border-bottom: 2px solid black;
 }
 
+    .special_button_white:hover::after{
+      right: 0.3rem;
+      bottom: 0.3rem;
+      border-right: 2px solid white;
+      border-bottom: 2px solid  white;
   
+    }  
 

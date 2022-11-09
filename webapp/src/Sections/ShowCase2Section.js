@@ -9,7 +9,7 @@ const ShowCase2Section = () => {
                 <div className="imgLeft">
                     <h1>Pamela Reif's<br/>Top Picks</h1>
                     <div className="general_button">
-                        <a href = "#"><button type= "button" className="btn special_button">SHOP NOW</button></a>
+                        <a href = "#"><button type= "button" className="btn special_button_dark">SHOP NOW</button></a>
                     </div> 
                 </div>
                 <div className="imgRight">

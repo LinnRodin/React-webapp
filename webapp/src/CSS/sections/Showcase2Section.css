@@ -26,7 +26,7 @@
         color: var(--color-white);
     }
 
-    .imgLeft .special_button {
+    .imgLeft .special_button_dark {
         position: absolute;
         left: 58%;
         top: 60%;
@@ -37,7 +37,7 @@
         font-weight: bold;
         transition: 0.3s ease-in-out;
     }
-        .imgLeft .special_button:hover {
+        .imgLeft .special_button_dark:hover {
             background-color: white;
             color: black; 
             
