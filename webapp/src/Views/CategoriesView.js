@@ -1,12 +1,14 @@
 import React from 'react'
-import NotFoundView from '../Views/NotFoundView'
+import FooterSection from '../Sections/FooterSection'
+import TopMenuSection from '../Sections/TopMenuSection'
 
 
 const CategoriesView = () => {
   window.top.document.title = 'Categories | Fixxo.'
   return (
     <>
-    <NotFoundView />
+     <TopMenuSection />
+     <FooterSection />
     </>  
   )
 }

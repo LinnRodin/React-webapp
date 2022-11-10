@@ -6,8 +6,8 @@ const ShoppingCartView = () => {
   window.top.document.title = 'ShoppingCart | Fixxo.'
   return (
     <>
-    <TopMenuSection />
-    <FooterSection />
+     <TopMenuSection />
+     <FooterSection />
     </>  
   )
 }
