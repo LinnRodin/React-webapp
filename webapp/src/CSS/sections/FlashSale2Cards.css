@@ -1,22 +1,22 @@
-/* --------------------------Flashsale-right-side--------------------------------- */
+/* --------------------------Flashsale-box-right-side--------------------------------- */
 
 .flash-sale-right{
     margin-top: 5rem;
     border-bottom: var(--color-grey-7) solid 2px;
 }
 
-.flash-sale-right .container{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
+    .flash-sale-right .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+/* Grid - card component */
 .product_component_right{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     flex: 1;
 }
 
-    /* Box */
+    /* Placeholder box */
 .flash-sale-right .img_right_box {
     background-color: var(--color-grey-1);
     height: 620px;
@@ -37,6 +37,7 @@
            color: var(--color-white-1);
         }
 
+        /* Button */
         .img_right_box .img_right_button .special_button_white {
             background-color: white;
             color: black;

@@ -1,5 +1,5 @@
 
-/* ----------------------------------Contact---------------------------------- */
+/* ----------------------------------Contacts-section--------------------------------- */
 
 .breadcrumb {
     margin-bottom: 40px;
@@ -36,9 +36,10 @@
                     
                 }
 
-
+        /* Design home > contacts title */
     .breadcrumb-list li + li:before {
         content: "\00a0\00a0>\00a0\00a0";
         font-weight: 400;
         color: black;
+        
     }

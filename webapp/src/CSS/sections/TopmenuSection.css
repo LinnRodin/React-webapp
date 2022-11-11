@@ -1,5 +1,5 @@
 
-/* -----------------------Top-menu------------------*/
+/* ---------------------------------Top-menu-section--------------------------------*/
 
 .top-menu {
     height: 80px;
@@ -76,7 +76,7 @@
                 }
 
 
-            /*----Top-menu-round-buttons-*/
+            /*------Top-menu-round-buttons----*/
 
             .social-media .btn {
                 border-radius: 50%;

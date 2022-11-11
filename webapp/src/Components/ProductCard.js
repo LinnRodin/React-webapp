@@ -44,7 +44,7 @@ const ProductCard = ({product}) => {
                                         </div>
                                       <p className="card-new-price">${product.price}</p>
                                     </div>
-                              </div> 
+                                </div> 
                         </div>
                          <div className="card-background"></div>
                     </div>      

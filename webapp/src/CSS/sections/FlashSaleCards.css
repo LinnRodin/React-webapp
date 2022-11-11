@@ -1,15 +1,16 @@
-/* -------------------------Flashsale-left-side---------------------------------- */
+/* -------------------------Flashsale-box-left-side---------------------------------- */
 
  
 .flash-sale-left{
     margin-top: 5rem;  
 }
 
-.flash-sale-left .container{
-    display: flex;
-    flex-direction: row
-}
+    .flash-sale-left .container{
+        display: flex;
+        flex-direction: row
+    }
 
+/* Grid - card component */
 .product_component_left{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -37,7 +38,7 @@
            font-size: 55px;
            color: var(--color-white-1);
         }
-
+            /*Button*/
         .img_left_box .img_left_button .special_button_white {
             background-color: white;
             color: black; 

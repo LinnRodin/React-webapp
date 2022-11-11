@@ -11,7 +11,7 @@ const CategoriesView = () => {
         <div className="container">
           <h1 className="ms-4" style={{ fontSize: "2rem"}}></h1>
           <div className="d-flex justify-content-center align-items-center vh-100">
-            <img src={UnderConstruction} alt="under construction" style={{ height: "800px" }} />
+            <img src={UnderConstruction} alt="under construction" style={{ height: "700px" }} />
           </div>
         </div>
      <FooterSection />
