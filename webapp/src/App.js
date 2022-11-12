@@ -51,7 +51,7 @@ function App() {
 
 
     
-  }, [setProducts, products]);
+  }, [setProducts]);
 
 
   return (
